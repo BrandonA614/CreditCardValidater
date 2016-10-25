@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Runner
 	{
-		static	Scanner file = new Scanner( new File( "creditCardNumbers.txt" ) );
+	
 		
 		public static void main(String[] args) throws FileNotFoundException
 			{
@@ -14,8 +14,12 @@ public class Runner
 				System.out.println(num);
 					while(num > 0) {
 					long digit = num % 10;
-					long digitDouble = digit * 2;
-					System.out.println(digitDouble);
+					digit = num / 10;
+					digit = num %10;
+					System.out.println(digit);
+					digit = num % 10;
+					
+					System.out.println(digit);
 					break;
 	
 
